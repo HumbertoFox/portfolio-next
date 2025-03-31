@@ -1,0 +1,77 @@
+[
+    {
+        "icon": "Html5Original",
+        "name": "HTML5",
+        "description": "HTML é a base fundamental para a criação de páginas web. Ele fornece a estrutura, a semântica e os elementos necessários para apresentar informações de forma organizada e acessível na web..."
+    },
+    {
+        "icon": "Css3Original",
+        "name": "CSS3",
+        "description": "CSS é essencial para controlar o estilo e o design de páginas web, tornando possível criar layouts atraentes, responsivos e consistentes..."
+    },
+    {
+        "icon": "JavascriptOriginal",
+        "name": "JavaScript",
+        "description": "JavaScript é uma linguagem versátil que desempenha um papel fundamental no desenvolvimento web, aplicativos móveis e em uma variedade de outras aplicações..."
+    },
+    {
+        "icon": "GithubOriginal",
+        "name": "GitHub",
+        "description": "GitHub é uma plataforma essencial para desenvolvedores de software e equipes de desenvolvimento, pois facilita o controle de versão, a colaboração, o compartilhamento de código..."
+    },
+    {
+        "icon": "GitOriginal",
+        "name": "Git",
+        "description": "Git é uma ferramenta fundamental no desenvolvimento de software, fornecendo controle de versão, colaboração em equipe, rastreamento de alterações..."
+    },
+    {
+        "icon": "ReactOriginal",
+        "name": "React",
+        "description": "React é uma biblioteca JavaScript desenvolvida pelo Facebook. É usada para construir interfaces de usuário (UI) interativas e reativas para aplicações web..."
+    },
+    {
+        "icon": "VitejsOriginal",
+        "name": "Vite.Js",
+        "description": "Vite é uma ferramenta de construção e desenvolvimento para aplicações web, criada por Evan You, o criador do Vue.js. Ele se destaca por sua velocidade e eficiência..."
+    },
+    {
+        "icon": "NextjsOriginal",
+        "name": "Next.Js",
+        "description": "Next.js é um framework React desenvolvido pela Vercel que facilita a criação de aplicações web. Ele é conhecido por oferecer uma série de recursos que melhoram a experiência de desenvolvimento..."
+    },
+    {
+        "icon": "PostgresqlOriginal",
+        "name": "PostgreSql",
+        "description": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de código aberto e altamente avançado. Ele é conhecido por sua robustez, escalabilidade e suporte a recursos avançados..."
+    },
+    {
+        "icon": "MariadbOriginal",
+        "name": "MariaDB",
+        "description": "MariaDB é um sistema de gerenciamento de banco de dados relacional (RDBMS) que é um fork do MySQL, criado por alguns dos desenvolvedores originais do MySQL..."
+    },
+    {
+        "icon": "PhpOriginal",
+        "name": "PHP",
+        "description": "PHP (Hypertext Preprocessor) é uma linguagem de programação amplamente utilizada para desenvolvimento web, especialmente para a criação de sites dinâmicos e aplicações web..."
+    },
+    {
+        "icon": "LaravelOriginal",
+        "name": "Laravel",
+        "description": "Laravel é um framework de desenvolvimento web em PHP que se destaca pela sua elegância e simplicidade. Criado por Taylor Otwell em 2011..."
+    },
+    {
+        "icon": "ExpressOriginal",
+        "name": "Express",
+        "description": "Express é um framework web para Node.js que facilita a criação de servidores e aplicações web. Ele é conhecido por sua simplicidade, flexibilidade e performance..."
+    },
+    {
+        "icon": "PrismaOriginal",
+        "name": "Prisma",
+        "description": "Prisma é uma ferramenta de ORM (Object-Relational Mapping) moderna e poderosa para Node.js e TypeScript, que facilita a interação com bancos de dados relacionais..."
+    },
+    {
+        "icon": "DockerOriginal",
+        "name": "Docker",
+        "description": "Docker é uma plataforma que permite criar, implantar e gerenciar aplicativos em contêineres. Um contêiner é uma unidade leve e portátil que encapsula tudo o que um aplicativo precisa para rodar..."
+    }
+]
