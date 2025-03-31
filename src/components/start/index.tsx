@@ -87,7 +87,7 @@ export default function StartComponent() {
                     <h1 className="text-4xl font-bold">Sou o Humberto Ribeiro</h1>
                     <h2 className="text-4xl">Desenvolvedor Full-Stack</h2>
                 </div>
-                <div className="flex gap-2 text-4xl opacity-0" ref={socialRef}>
+                <div className="social" ref={socialRef}>
                     <Link href="https://www.linkedin.com/in/humberto-ribeiro-sales/" target='_blank'>
                         <FaLinkedinIn />
                     </Link>

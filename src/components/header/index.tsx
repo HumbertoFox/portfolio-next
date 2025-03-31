@@ -80,7 +80,7 @@ export default function HeaderComponent() {
             </Link>
             <div className="flex flex-col items-end gap-4">
                 <div className="flex gap-2">
-                    <Switch checked={isChecked} onCheckedChange={handleSwitchChange} title={isChecked ? 'Claro' : 'Escuro'} />
+                    <Switch className="cursor-pointer" checked={isChecked} onCheckedChange={handleSwitchChange} title={isChecked ? 'Claro' : 'Escuro'} />
                     <FaLightbulb />
                 </div>
 

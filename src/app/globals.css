@@ -278,6 +278,47 @@ html {
       z-index: 1;
     }
   }
+
+  .social {
+    display: flex;
+    text-align: center;
+    gap: 15px;
+    opacity: 0;
+
+    & a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      text-shadow: 0px 0px 25px #0072FF,
+        0px 0px 50px #0072FF,
+        0px 0px 75px #0072FF,
+        0px 0px 100px #0072FF;
+      animation: animateIcons 3s linear infinite;
+      transition: all .4s ease-in-out;
+    }
+
+    a:nth-child(2) {
+      animation-delay: .2s;
+    }
+
+    a:nth-child(3) {
+      animation-delay: .4s;
+    }
+
+    a:nth-child(4) {
+      animation-delay: .6s;
+    }
+
+    a svg {
+      color: #00F;
+      transition: all .4s ease-in-out;
+    }
+
+    a:hover svg {
+      color: var(--foreground);
+    }
+  }
 }
 
 @keyframes gradient {
@@ -301,5 +342,15 @@ html {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes animateIcons {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
   }
 }
