@@ -85,7 +85,7 @@ export default function HeaderComponent() {
                 </div>
 
                 <nav className="flex gap-2">
-                    <Link className="buttons" ref={navAboutRef} href="#about">
+                    <Link className="buttons" ref={navAboutRef} href="#about_me">
                         <span>sobre mim</span>
                     </Link>
                     <Link className="buttons" ref={navSkillsRef} href="#skills">

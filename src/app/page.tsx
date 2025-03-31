@@ -1,5 +1,6 @@
 import AboutComponent from '@/components/about';
 import HeaderComponent from '@/components/header';
+import SkillsComponent from '@/components/skills';
 import StartComponent from '@/components/start';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeaderComponent />
       <StartComponent />
       <AboutComponent />
+      <SkillsComponent />
     </div>
   );
 }
