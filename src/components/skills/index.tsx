@@ -106,7 +106,7 @@ export default function SkillsComponent() {
         }
     }, [visibleSkills]);
     return (
-        <section className="w-full h-screen flex flex-col gap-10 cursor-default" id="skills" ref={skillsRef}>
+        <section className="w-full min-h-screen flex flex-col gap-10 cursor-default" id="skills" ref={skillsRef}>
             <h4 className="text-center text-3xl font-bold capitalize opacity-0" ref={titleSkillsRef}>habilidades</h4>
 
             <div className="flex flex-wrap items-center justify-center gap-5 opacity-0" ref={leftSkillsRef}>
@@ -127,7 +127,7 @@ export default function SkillsComponent() {
 
             {visibleSkills < skillsData.length && (
                 <div className="flex justify-center">
-                    <button className="buttons" type="button" ref={centerSkillsRef} onClick={loadMoreSkills}>
+                    <button className="buttons cursor-pointer" type="button" ref={centerSkillsRef} onClick={loadMoreSkills}>
                         <span>Carregar mais</span>
                     </button>
                 </div>

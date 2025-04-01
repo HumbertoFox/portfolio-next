@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import ImgPerfil from '@/components/images/foto-perfil.png'
+import ImgPerfil from '@/components/images/foto-perfil.png';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';

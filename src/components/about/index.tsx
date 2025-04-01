@@ -76,10 +76,10 @@ export default function AboutComponent() {
         });
     }, []);
     return (
-        <section className="w-full h-[80vh] flex flex-col gap-10 cursor-default" id="about_me" ref={aboutRef}>
+        <section className="w-full min-h-[80vh] flex flex-col gap-10 cursor-default" id="about_me" ref={aboutRef}>
             <h3 className="text-center text-3xl font-bold capitalize opacity-0" ref={titleAboutRef}>sobre mim</h3>
 
-            <div className="flex justify-between items-center gap-12 ">
+            <div className="flex justify-between items-center gap-12">
                 <div className="perfilrt" ref={imageAboutRef}>
                     <Image src={ImgPerfil} alt="Imagem Perfil" />
                 </div>

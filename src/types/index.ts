@@ -5,3 +5,13 @@ export interface Skill {
     name: string;
     description: string;
 };
+
+export interface ProjectsProps {
+    id: string;
+    github: string;
+    live: string;
+    description: string;
+    title: string;
+    bgfr: string;
+    bgba: string;
+};
