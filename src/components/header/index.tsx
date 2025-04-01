@@ -9,10 +9,11 @@ import { Switch } from '@/components/ui/switch';
 import { FaLightbulb } from 'react-icons/fa';
 
 export default function HeaderComponent() {
+    const logoRef = useRef(null);
+    const switchRef = useRef(null);
     const navAboutRef = useRef(null);
     const navSkillsRef = useRef(null);
     const navProjectsRef = useRef(null);
-    const logoRef = useRef(null);
     const [isChecked, setIsChecked] = useState<boolean>(false);
 
     const handleSwitchChange = (checked: boolean) => setIsChecked(checked);
@@ -27,6 +28,7 @@ export default function HeaderComponent() {
 
     useEffect(() => {
         const logo = logoRef.current;
+        const switchtoggle = switchRef.current;
         const about = navAboutRef.current;
         const skills = navSkillsRef.current;
         const projects = navProjectsRef.current;
@@ -34,6 +36,16 @@ export default function HeaderComponent() {
         gsap.fromTo(logo, {
             opacity: 0,
             x: 300,
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 1,
+            ease: 'power1.in'
+        });
+
+        gsap.fromTo(switchtoggle, {
+            opacity: 0,
+            x: -300,
         }, {
             opacity: 1,
             x: 0,
@@ -79,7 +91,7 @@ export default function HeaderComponent() {
                 <Image src={LogoBfn} alt='Logo BetoFoxNet' priority />
             </Link>
             <div className="flex flex-col items-end gap-4">
-                <div className="flex gap-2">
+                <div className="flex gap-2 opacity-0" ref={switchRef}>
                     <Switch className="cursor-pointer" checked={isChecked} onCheckedChange={handleSwitchChange} title={isChecked ? 'Claro' : 'Escuro'} />
                     <FaLightbulb />
                 </div>

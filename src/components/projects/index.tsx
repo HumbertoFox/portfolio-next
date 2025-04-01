@@ -128,7 +128,7 @@ export default function ProjectComponent() {
         <section className="w-full min-h-screen flex flex-col gap-10 px-4 cursor-default" id='projects' ref={projectsRef}>
             <h5 className="text-center text-3xl font-bold capitalize opacity-0" ref={titleProjectsRef}>Meus projetos</h5>
 
-            <div className="flex justify-around items-center flex-wrap gap-5" ref={centerProjectsRef}>
+            <div className="flex justify-around items-center flex-wrap gap-5 opacity-0" ref={centerProjectsRef}>
                 {projects?.map((project, index) => (
                     <div className="flex justify-around items-center flex-wrap gap-5 projects" key={index}>
                         <div className="projectfron" style={{backgroundImage: `url(${project.bgfr})`}}>

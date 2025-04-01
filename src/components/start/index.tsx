@@ -2,10 +2,9 @@
 
 import Image from 'next/image';
 import ImgPerfil from '@/components/images/foto-perfil.png';
-import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import Link from 'next/link';
+import SocialComponent from '@/components/social';
 
 export default function StartComponent() {
     const textRef = useRef(null);
@@ -87,20 +86,8 @@ export default function StartComponent() {
                     <h1 className="text-4xl font-bold">Sou o Humberto Ribeiro</h1>
                     <h2 className="text-4xl">Desenvolvedor Full-Stack</h2>
                 </div>
-                <div className="social" ref={socialRef}>
-                    <Link href="https://www.linkedin.com/in/humberto-ribeiro-sales/" target='_blank'>
-                        <FaLinkedinIn />
-                    </Link>
-                    <Link href="https://github.com/HumbertoFox/" target='_blank'>
-                        <FaGithub />
-                    </Link>
-                    <Link href="https://www.instagram.com/betofoxnet_info/" target='_blank'>
-                        <FaInstagram />
-                    </Link>
-                    <Link href="https://api.whatsapp.com/send/?phone=5581988075408&text&type=phone_number&app_absent=0" target='_blank'>
-                        <FaWhatsapp />
-                    </Link>
-                </div>
+
+                <SocialComponent socialRef={socialRef} />
             </section>
 
             <div className="perfilrt" ref={imgRef}>

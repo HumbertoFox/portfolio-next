@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import { JSX, RefObject } from 'react';
 
 export interface Skill {
     icon: JSX.Element;
@@ -14,4 +14,8 @@ export interface ProjectsProps {
     title: string;
     bgfr: string;
     bgba: string;
+};
+
+export interface SocialComponentProps {
+    socialRef: RefObject<HTMLDivElement | null>;
 };

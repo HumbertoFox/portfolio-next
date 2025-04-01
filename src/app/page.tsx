@@ -1,4 +1,5 @@
 import AboutComponent from '@/components/about';
+import FooterComponent from '@/components/footer';
 import HeaderComponent from '@/components/header';
 import ProjectComponent from '@/components/projects';
 import SkillsComponent from '@/components/skills';
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutComponent />
       <SkillsComponent />
       <ProjectComponent />
+      <FooterComponent />
     </div>
   );
 }
