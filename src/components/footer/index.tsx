@@ -114,8 +114,11 @@ export default function FooterComponent() {
         });
     }, []);
     return (
-        <footer className="w-full flex justify-between items-center pt-5 pb-2.5">
-            <p className="opacity-0" ref={msmLeftFooterRef}>Há <strong>{years}</strong> anos na área de Tecnologia.</p>
+        <footer className="w-full flex justify-between items-center gap-5 pt-5 pb-2.5 max-sm:flex-col-reverse">
+            <div className="flex flex-col opacity-0" ref={msmLeftFooterRef}>
+                <p>Há <strong>{years}</strong> anos,</p>
+                <p>na área de Tecnologia.</p>
+            </div>
 
             <div className="text-center">
                 <h6 className="pb-2.5 opacity-0" ref={msmFooterRef}>Me envie uma mensagem!</h6>

@@ -96,7 +96,7 @@ export default function HeaderComponent() {
                     <FaLightbulb />
                 </div>
 
-                <nav className="flex gap-2">
+                <nav className="flex gap-2 max-sm:hidden">
                     <Link className="buttons" ref={navAboutRef} href="#about_me">
                         <span>sobre mim</span>
                     </Link>

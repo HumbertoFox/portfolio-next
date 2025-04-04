@@ -79,9 +79,9 @@ export default function StartComponent() {
         });
     }, []);
     return (
-        <div className="w-full h-[80vh] flex items-center justify-between">
-            <section className="flex flex-col gap-5">
-                <div className="flex flex-col opacity-0 cursor-default" ref={textRef}>
+        <div className="w-full h-[80vh] flex items-center justify-between max-lg:flex-col-reverse">
+            <section className="flex flex-col gap-5 max-lg:items-center">
+                <div className="flex flex-col max-lg:text-center opacity-0 cursor-default" ref={textRef}>
                     <p className="text-3xl">Olá 🖖,</p>
                     <h1 className="text-4xl font-bold">Sou o Humberto Ribeiro</h1>
                     <h2 className="text-4xl">Desenvolvedor Full-Stack</h2>
