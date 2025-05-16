@@ -7,25 +7,23 @@ import { useEffect, useRef, useState } from 'react';
 import LogoBfn from '@/components/images/LOGOBFN.png';
 import { Switch } from '@/components/ui/switch';
 import { FaLightbulb } from 'react-icons/fa';
+import { useTheme } from 'next-themes';
+import { useTranslations } from 'next-intl';
+import LanguageToggleComponent from '../languages';
 
 export default function HeaderComponent() {
+    const t = useTranslations('HeaderComponent');
     const logoRef = useRef(null);
     const switchRef = useRef(null);
     const navAboutRef = useRef(null);
     const navSkillsRef = useRef(null);
     const navProjectsRef = useRef(null);
-    const [isChecked, setIsChecked] = useState<boolean>(false);
+    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
 
-    const handleSwitchChange = (checked: boolean) => setIsChecked(checked);
+    const handleSwitchChange = (checked: boolean) => setTheme(checked ? 'dark' : 'light');
 
-    useEffect(() => {
-        if (isChecked) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        };
-    }, [isChecked]);
-
+    useEffect(() => setMounted(true), []);
     useEffect(() => {
         const logo = logoRef.current;
         const switchtoggle = switchRef.current;
@@ -35,7 +33,7 @@ export default function HeaderComponent() {
 
         gsap.fromTo(logo, {
             opacity: 0,
-            x: 300,
+            x: 300
         }, {
             opacity: 1,
             x: 0,
@@ -45,7 +43,7 @@ export default function HeaderComponent() {
 
         gsap.fromTo(switchtoggle, {
             opacity: 0,
-            x: -300,
+            x: -300
         }, {
             opacity: 1,
             x: 0,
@@ -92,19 +90,27 @@ export default function HeaderComponent() {
             </Link>
             <div className="flex flex-col items-end gap-4">
                 <div className="flex gap-2 opacity-0" ref={switchRef}>
-                    <Switch className="cursor-pointer" checked={isChecked} onCheckedChange={handleSwitchChange} title={isChecked ? 'Claro' : 'Escuro'} />
+                    <LanguageToggleComponent />
+                    {mounted && (
+                        <Switch
+                            className="cursor-pointer"
+                            checked={theme === 'dark'}
+                            onCheckedChange={handleSwitchChange}
+                            title={theme === 'dark' ? t('SwitchTitleDark') : t('SwitchTitleLight')}
+                        />
+                    )}
                     <FaLightbulb />
                 </div>
 
                 <nav className="flex gap-2 max-sm:hidden">
-                    <Link className="buttons" ref={navAboutRef} href="#about_me">
-                        <span>sobre mim</span>
+                    <Link className="buttons" title={t('ButtonTitleOne')} ref={navAboutRef} href="#about_me">
+                        <span>{t('ButtonOne')}</span>
                     </Link>
-                    <Link className="buttons" ref={navSkillsRef} href="#skills">
-                        <span>habilidades</span>
+                    <Link className="buttons" title={t('ButtonTitleTwo')} ref={navSkillsRef} href="#skills">
+                        <span>{t('ButtonTwo')}</span>
                     </Link>
-                    <Link className="buttons" ref={navProjectsRef} href="#projects">
-                        <span>Projetos</span>
+                    <Link className="buttons" title={t('ButtonTitleThree')} ref={navProjectsRef} href="#projects">
+                        <span>{t('ButtonThree')}</span>
                     </Link>
                 </nav>
             </div>

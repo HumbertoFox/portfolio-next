@@ -6,8 +6,10 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function AboutComponent() {
+    const t = useTranslations('AboutComponent');
     const aboutRef = useRef(null);
     const titleAboutRef = useRef(null);
     const imageAboutRef = useRef(null);
@@ -77,34 +79,26 @@ export default function AboutComponent() {
     }, []);
     return (
         <section className="w-full min-h-[80vh] flex flex-col gap-10 cursor-default" id="about_me" ref={aboutRef}>
-            <h3 className="text-center text-3xl font-bold capitalize opacity-0" ref={titleAboutRef}>sobre mim</h3>
+            <h3 className="text-center text-3xl font-bold capitalize opacity-0" ref={titleAboutRef}>{t('Hthird')}</h3>
 
             <div className="flex justify-between items-center gap-12 max-lg:flex-col">
                 <div className="perfilrt" ref={imageAboutRef}>
-                    <Image src={ImgPerfil} alt="Imagem Perfil" />
+                    <Image src={ImgPerfil} alt={t('ImgAlt')} />
                 </div>
 
                 <div className="max-w-2/4 opacity-0" ref={textAboutRef}>
-                    <p className="text-xl max-lg:text-center">
-                        <strong>Olá!<br />
-                            Me chamo Humberto Ribeiro e sou um desenvolvedor
-                            Full-Stack em formação! 📚</strong><br />
-                        Gosto MUITO da área de tecnologia, e tenho certeza que posso
-                        contribuir em qualquer time com as minhas habilidades.
-                    </p>
-                    <p className="text-xl max-lg:text-center">
-                        Sou técnico em Informática desde 2002 em Telecomunicações em 2016
-                        e Desenvolvimento de Sistema em sistema Web 2021 👨‍🎓.<br />
-                        Estou sempre me desafiando com novos projetos e participando
-                        de comunidades de programação para buscar feedback de outros
-                        desenvolvedoras e desenvolvedores.
-                        Além de tentar ajudar essas pessoas com o que eu já aprendi. 😁<br />
-                        Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
-                    </p>
-
+                    <div className="text-xl max-lg:text-center">
+                        <p><strong>{t('ParagrafOne')}</strong></p>
+                        <p><strong>{t('ParagrafSecond')} 📚</strong></p>
+                        <p>{t('ParagrafThree')}</p>
+                        <p>{t('ParagrafFour')} 👨‍🎓.</p>
+                        <p>{t('ParagrafFive')}</p>
+                        <p>{t('ParagrafSix')} 😁</p>
+                        <p>{t('ParagrafSeven')} 💜</p>
+                    </div>
                     <div className="flex py-10 max-lg:justify-center">
                         <Link className="buttons" href={"file/cv.pdf"} target='_blank' ref={buttonAboutRef}>
-                            <span>Veja meu CV</span>
+                            <span>{t('LinkCv')}</span>
                         </Link>
                     </div>
                 </div>

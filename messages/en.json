@@ -1,0 +1,86 @@
+{
+    "HeaderComponent": {
+        "SwitchTitleDark": "Dark",
+        "SwitchTitleLight": "Light",
+        "ButtonTitleOne": "About Me",
+        "ButtonOne": "about me",
+        "ButtonTitleTwo": "Skills",
+        "ButtonTwo": "skills",
+        "ButtonTitleThree": "Projects",
+        "ButtonThree": "projects"
+    },
+    "StartComponent": {
+        "Paragraf": "Hello",
+        "Hfirst": "I'm Humberto Ribeiro",
+        "Hsecond": "Full-Stack Developer",
+        "ImgAlt": "Imagem Perfil"
+    },
+    "AboutComponent": {
+        "Hthird": "about me",
+        "ImgAlt": "Profile Image",
+        "ParagrafOne": "Hello!",
+        "ParagrafSecond": "My name is Humberto Ribeiro and I am a Full-Stack developer in training!",
+        "ParagrafThree": "I REALLY like the technology area, and I'm sure I can contribute to any team with my skills.",
+        "ParagrafFour": "I have been a Computer Technician since 2002 in Telecommunications in 2016 and System Development in Web system 2021",
+        "ParagrafFive": "I'm always challenging myself with new projects and participating in programming communities to seek feedback from other developers.",
+        "ParagrafSix": "In addition to trying to help these people with what I have already learned.",
+        "ParagrafSeven": "Oh, I like games, movies, series, anime and other nerdy stuff.",
+        "LinkCv": "See my CV"
+    },
+    "SkillsComponent": {
+        "Hfourth": "skills",
+        "DescriptionFirst": "HTML is the fundamental basis for creating web pages. It provides the structure, semantics and elements needed to present information in an organized and accessible way on the web, as well as allowing the creation of links and the embedding of media. It is an essential language for any web developer!",
+        "DescriptionSecond": "CSS is essential for controlling the style and design of web pages, making it possible to create attractive, responsive, and consistent layouts. It plays a key role in the visual presentation of content on the web and is an essential tool for web developers and designers!",
+        "DescriptionThird": "JavaScript is a versatile language that plays a key role in web development, mobile apps, and a variety of other applications. It is one of the most widely used languages ​​in the programming world due to its flexibility and ability to create interactive web experiences!",
+        "DescriptionFourth": "TypeScript is an open-source programming language that is a superset of JavaScript. This means that all JavaScript code is also valid TypeScript code. The main difference is that TypeScript adds static typing and other advanced features that are not present in traditional JavaScript!",
+        "DescriptionFifth": "PHP (Hypertext Preprocessor) is a programming language widely used for web development, especially for creating dynamic websites and web applications. Here are some important features and information about PHP: 1. **Server-Side Scripting Language**, 2. **Ease of Learning**, 3. **Database Integration**, 4. **Large Community and Support**, 5. **Popular Frameworks**, 6. **Security Features**, 7. **HTML Compatibility**, 8. **Affordable Hosting**, 9. **Object-Oriented Programming Support**!",
+        "DescriptionSixth": "Tailwind CSS is a utility-first CSS framework that allows you to create custom designs directly in HTML using predefined utility classes. Instead of writing custom styles in CSS, you use these utility classes to define style properties like margins, spacing, colors, fonts, and other design aspects!",
+        "DescriptionSeventh": "GitHub is an essential platform for software developers and development teams, as it facilitates version control, collaboration, code sharing and project management, contributing to the efficiency and quality of software development!",
+        "DescriptionEighth": "Git is a fundamental tool in software development, providing version control, team collaboration, change tracking, and many other features that make software development more efficient, secure, and collaborative. It is an essential tool for developers and software development teams!",
+        "DescriptionNinth": "React is a JavaScript library developed by Facebook. It is used to build interactive and reactive user interfaces (UI) for web applications. The main goal of React is to make it easier to create reusable components and build scalable user interfaces. Additionally, React introduces a programming paradigm called declarative programming!",
+        "DescriptionTenth": "Vite is a web application development and building tool created by Evan You, the creator of Vue.js. It stands out for its speed and efficiency, using a modern approach to project development. Here are some of Vite's main features: 1. **Rapid Development**, 2. **Optimized Build**, 3. **Multiple Framework Support** 4. **Simple Configuration**, 5. **Plugins** If you are thinking about using Vite for your next project, it would be a great option!",
+        "DescriptionEleventh": "Next.js is a React framework developed by Vercel that makes it easy to build web applications. It is known for offering a number of features that improve the development experience and performance of applications. Here are some of the main features of Next.js: 1. **Hybrid Rendering**, 2. **Static Site Generation (SSG)**, 3. **Automatic Routes**, 4. **Routes API** 5. **CSS and Sass Support**, 6. **Image Optimization**, 7. **Performance and SEO**, 8. **TypeScript Support** 9. **Development Environment**, These features make Next.js a popular choice for developers who want to build React applications quickly and efficiently!",
+        "DescriptionTwelfth": "Laravel is a PHP web development framework that stands out for its elegance and simplicity. Created by Taylor Otwell in 2011, Laravel was designed to facilitate the development of web applications, offering a series of features and tools that help speed up the coding process. Some of the main features of Laravel include: 1. **MVC Architecture**, 2. **Simple Routing**, 3. **Eloquent ORM**, 4. **Migration System**, 5. **Security**, 6. **Artisan**, 7. **Community and Ecosystem**!",
+        "DescriptionThirteenth": "PostgreSQL is a highly advanced, open-source relational database management system. It is known for its robustness, scalability, and support for advanced features. Here are some of the main features of PostgreSQL: Open Source, SQL-Compatibility, Extensibility, ACID support, Support for advanced data types, Stored procedures and functions, Advanced indexing, Replication and high availability, Active community. Due to these features, PostgreSQL is a popular choice for many applications, from small startups to large corporations!",
+        "DescriptionFourteenth": "MariaDB is a relational database management system (RDBMS) that is a fork of MySQL, created by some of the original MySQL developers after the latter was acquired by Oracle. MariaDB is popular for being an open source alternative to MySQL and offers a number of features and improvements. Here are some of the main features of MariaDB: 1. **Open Source**, 2. **MySQL Compatibility**, 3. **Enhanced Performance**, 4. **Advanced Features**, 5. **Security**, 6. **Replication and Scalability**, 7. **Active Community**, 8. **Command Line Interface**, 9. **Graphical User Interface**!",
+        "DescriptionFifteenth": "Prisma is a modern and powerful Object-Relational Mapping (ORM) tool for Node.js and TypeScript that makes it easy to interact with relational databases. It helps you map data between your database and your application in a more intuitive and secure way. Here are some of the main features and functionalities of Prisma: 1. **Prisma Client**, 2. **Prisma Migrate**, 3. **Prisma Studio**, 4. **Declarative Data Model**, 5. **Cross-Database Support**, 6. **Security and Validation**, 7. **Performance**, 8. **JavaScript/TypeScript Ecosystem Integration**, 9. **Community and Support**, Overall, Prisma is a tool that aims to simplify and improve the development experience of working with databases by providing a modern and efficient way to handle data in Node.js and TypeScript applications!",
+        "DescriptionSixteenth": "Express is a web framework for Node.js that makes it easy to build web servers and applications. It is known for its simplicity, flexibility, and performance. Here are some of the main features of Express: 1. **Minimalist and Flexible**, 2. **Middleware**, 3. **Routing**, 4. **Error Handling**, 5. **View Engine Support**, 6. **Performance**, 7. **Community and Ecosystem**, 8. **Documentation and Resources**, Express is widely used in Node.js applications, from simple APIs to complex web applications. Its popularity and flexibility make it a popular choice for developers looking for a lightweight and efficient framework to build server applications!",
+        "DescriptionSeventeenth": "Docker is a platform that lets you build, deploy, and manage containerized applications. A container is a lightweight, portable unit that encapsulates everything an application needs to run, including code, libraries, and dependencies. This ensures that your application works consistently across different environments, from development to production. 1. **Isolation**, 2. **Portability**, 3. **Efficiency**, 4. **Ease of use**, 5. **Scalability**!",
+        "DescriptionEighteenth": "Amazon Web Services (AWS) is a cloud computing services platform provided by Amazon. It offers a wide range of services such as IT infrastructure, data storage, networking, security, machine learning, data analytics, databases, and more. These services are offered over the internet, allowing companies of different sizes and industries to scale their operations without the need to invest in physical hardware. 1. **EC2 (Elastic Compute Cloud)**: Offers virtual servers to run applications, 2. **S3 (Simple Storage Service)**: Object storage service, where you can store large volumes of data in a scalable way, 3. **RDS (Relational Database Service)**: Managed service for relational databases, 4. **Lambda**: Executing code without the need to manage servers (serverless computing), 5. **VPC (Virtual Private Cloud)**: Creating private networks in the cloud!",
+        "DescriptionNineteenth": "Electron is a framework that lets you build desktop applications with JavaScript, HTML, and CSS. By embedding Chromium and Node.js into its binary, Electron lets you maintain a single JavaScript codebase and build cross-platform applications that run on Windows, macOS, and Linux — no native development experience required!",
+        "ButtonPlus": "Load more",
+        "ButtonClose": "To close"
+    },
+    "ProjectComponent": {
+        "Hfifth": "My projects",
+        "ParagrafOne": "Project developed by Humberto Ribeiro",
+        "ParagrafSecond": "GitHub Repository",
+        "ParagrafFour": "Page",
+        "DescriptionFirst": "Project developed with Next.js, CSS, TypeScript, PostgreSql >> Vercel <<",
+        "TitleFirst": "Office App Project",
+        "DescriptionSecond": "Project developed with Framework Next.Js, Tailwind, TypeScript and PostgreSql, >> Vercel <<",
+        "TitleSecond": "Next.Js 15 Full Stack Project",
+        "DescriptionThird": "Project developed with Framework, Tailwind and TypeScript, >> Vercel <<",
+        "TitleThird": "Personal Pizza Test Project",
+        "DescriptionFourth": "Project developed with Framework, Next.js, Tailwind TypeScript and PostgreSql, >> Vercel <<",
+        "TitleFourth": "Personal Project Donation Collection Management",
+        "DescriptionFifth": "Project developed with HTML, CSS, JavaScript, API, React+Vite, >> Vercel <<",
+        "TitleFifth": "Double PokéDex Dev Test Project",
+        "DescriptionSixth": "Project developed with React+Vite HTML, CSS, JavaScript, >> Vercel <<",
+        "TitleSixth": "Donor Registration and Donation App Project",
+        "DescriptionSeventh": "Project developed with Framework, Next.js, Css and TypeScript, >> Vercel <<",
+        "TitleSeventh": "Test Project API Consumption",
+        "DescriptionEighth": "Project developed with Framework, Next.js, Tailwind and TypeScript >> Vercel <<",
+        "TitleEighth": "Test Project for D3 Crossword Page"
+    },
+    "FooterComponent": {
+        "ParagrafOneFirst": "There is",
+        "ParagrafOneSecond": "years,",
+        "ParagrafSecond": "in the area of ​​Technology.",
+        "Hsexth": "Send me a message!"
+    },
+    "NotFound": {
+        "TextTitle": "Page not found",
+        "TextParagraf": "Sorry, we couldn't find the page you're looking for."
+    }
+}
