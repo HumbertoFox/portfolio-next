@@ -18,9 +18,9 @@ export default function ProjectComponent() {
 
     const projects: ProjectsProps[] = [
         {
-            id: 'consultorio-app',
-            github: 'https://github.com/HumbertoFox/consultorio-app',
-            live: 'https://consultorio-app.vercel.app',
+            id: 'next-starter-kit',
+            github: 'https://github.com/HumbertoFox/nextjs-starter-kit',
+            live: 'https://nextjs-starter-kit-betofoxnet-info-projects.vercel.app/',
             description: t('DescriptionFirst'),
             title: t('TitleFirst'),
             bgfr: '/bgs/bg_fron_0.png',
@@ -63,9 +63,9 @@ export default function ProjectComponent() {
             bgba: '/bgs/bg_back_4.png'
         },
         {
-            id: 'donationsvite-app',
-            github: 'https://github.com/HumbertoFox/projeto-0-react',
-            live: 'https://projeto-0-react.vercel.app/',
+            id: 'next-kit-starter',
+            github: 'https://github.com/HumbertoFox/nextjs-kit-starter',
+            live: 'https://nextjs-kit-starter-betofoxnet-info-projects.vercel.app/',
             description: t('DescriptionSixth'),
             title: t('TitleSixth'),
             bgfr: '/bgs/bg_fron_0.png',
