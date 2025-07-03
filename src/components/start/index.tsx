@@ -58,7 +58,7 @@ export default function StartComponent() {
                 <SocialComponent socialRef={socialRef} />
             </section>
 
-            <div className="perfilrt" ref={imgRef}>
+            <div className="perfilrt max-md:my-auto" ref={imgRef}>
                 <Image src={ImgPerfil} alt={t('ImgAlt')} priority />
             </div>
         </div>
