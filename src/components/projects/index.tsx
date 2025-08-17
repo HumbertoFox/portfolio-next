@@ -28,12 +28,12 @@ export default function ProjectComponent() {
         },
         {
             id: 'project-nextjs',
-            github: 'https://github.com/HumbertoFox/nextjs-dashboard',
-            live: 'https://nextjs-dashboard-betofoxnet-info-projects.vercel.app/',
+            github: 'https://github.com/HumbertoFox/nextjs-kits-starter',
+            live: 'https://nextjs-kits-starter.vercel.app/',
             description: t('DescriptionSecond'),
             title: t('TitleSecond'),
             bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_1.png'
+            bgba: '/bgs/bg_back_0.png'
         },
         {
             id: 'pizzaria-app',
