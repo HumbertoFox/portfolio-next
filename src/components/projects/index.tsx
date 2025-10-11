@@ -36,13 +36,13 @@ export default function ProjectComponent() {
             bgba: '/bgs/bg_back_0.png'
         },
         {
-            id: 'pizzaria-app',
-            github: 'https://github.com/HumbertoFox/pizzaria',
-            live: 'https://pizzaria-beige-seven.vercel.app/',
+            id: 'project-nextjs-kits',
+            github: 'https://github.com/HumbertoFox/nextjs-start-kits',
+            live: 'https://nextjs-start-kits.vercel.app/',
             description: t('DescriptionThird'),
             title: t('TitleThird'),
             bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_2.png'
+            bgba: '/bgs/bg_back_0.png'
         },
         {
             id: 'project-bfn-mlu-next-app',
@@ -81,13 +81,13 @@ export default function ProjectComponent() {
             bgba: '/bgs/bg_back_6.png'
         },
         {
-            id: 'cruzado-d3-app',
-            github: 'https://github.com/HumbertoFox/cruzado-d3-app',
-            live: 'https://cruzado-d3-app.vercel.app/',
+            id: 'Projeto App Next.js Start Kits',
+            github: 'https://github.com/HumbertoFox/nextjs-start-kit',
+            live: 'https://nextjs-start-kit-pi.vercel.app/',
             description: t('DescriptionEighth'),
             title: t('TitleEighth'),
             bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_7.png'
+            bgba: '/bgs/bg_back_0.png'
         },
     ];
 
