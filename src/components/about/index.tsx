@@ -86,7 +86,7 @@ export default function AboutComponent() {
                     <Image src={ImgPerfil} alt={t('ImgAlt')} />
                 </div>
 
-                <div className="max-w-2/4 opacity-0" ref={textAboutRef}>
+                <div className="max-w-2/4 max-lg:max-w-full opacity-0" ref={textAboutRef}>
                     <div className="text-xl max-lg:text-center">
                         <p><strong>{t('ParagrafOne')}</strong></p>
                         <p><strong>{t('ParagrafSecond')} 📚</strong></p>
