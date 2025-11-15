@@ -14,10 +14,10 @@ export default function SkillsComponent() {
     const [visibleSkills, setVisibleSkills] = useState<number>(6);
     const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
     const [detailsVisible, setDetailsVisible] = useState(false);
-    const skillsRef = useRef(null);
-    const titleSkillsRef = useRef(null);
-    const leftSkillsRef = useRef(null);
-    const centerSkillsRef = useRef(null);
+    const skillsRef = useRef<HTMLElement>(null);
+    const titleSkillsRef = useRef<HTMLHeadingElement>(null);
+    const leftSkillsRef = useRef<HTMLDivElement>(null);
+    const centerSkillsRef = useRef<HTMLButtonElement>(null);
     const skillsListRef = useRef<(HTMLButtonElement | null)[]>([]);
 
     const skillsData = [
@@ -111,10 +111,22 @@ export default function SkillsComponent() {
         }
     }, [visibleSkills]);
     return (
-        <section className="w-full min-h-screen flex flex-col gap-10 cursor-default" id="skills" ref={skillsRef}>
-            <h4 className="text-center text-3xl font-bold capitalize opacity-0" ref={titleSkillsRef}>{t('Hfourth')}</h4>
+        <section
+            className="w-full min-h-screen flex flex-col gap-10 cursor-default"
+            id="skills"
+            ref={skillsRef}
+        >
+            <h4
+                className="text-center text-3xl font-bold capitalize opacity-0"
+                ref={titleSkillsRef}
+            >
+                {t('Hfourth')}
+            </h4>
 
-            <div className="flex flex-wrap items-center justify-center gap-5 opacity-0" ref={leftSkillsRef}>
+            <div
+                className="flex flex-wrap items-center justify-center gap-5 opacity-0"
+                ref={leftSkillsRef}
+            >
                 {skillsData.slice(0, visibleSkills).map((skill, index) => (
                     <button
                         className="group max-w-[350px] flex flex-col items-center gap-5 py-10 px-5 cursor-pointer"
@@ -132,7 +144,12 @@ export default function SkillsComponent() {
 
             {visibleSkills < skillsData.length && (
                 <div className="flex justify-center">
-                    <button className="buttons cursor-pointer" type="button" ref={centerSkillsRef} onClick={loadMoreSkills}>
+                    <button
+                        className="buttons cursor-pointer"
+                        type="button"
+                        ref={centerSkillsRef}
+                        onClick={loadMoreSkills}
+                    >
                         <span>{t('ButtonPlus')}</span>
                     </button>
                 </div>
