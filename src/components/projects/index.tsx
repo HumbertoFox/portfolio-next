@@ -10,7 +10,6 @@ export default async function ProjectComponent() {
     try {
         const { blobs } = await list({
             prefix: "logo/",
-            token: process.env.BLOB_PORTFOLIO_READ_WRITE_TOKEN,
         });
 
         const foto = blobs.find(b =>
@@ -25,7 +24,6 @@ export default async function ProjectComponent() {
     try {
         const { blobs } = await list({
             prefix: "projects/",
-            token: process.env.BLOB_PORTFOLIO_READ_WRITE_TOKEN,
         });
 
         const frFile = blobs.find(b => b.pathname.includes("bg_fron"));

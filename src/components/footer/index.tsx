@@ -8,7 +8,6 @@ export default async function FooterComponent() {
     try {
         const { blobs } = await list({
             prefix: "logo/",
-            token: process.env.BLOB_PORTFOLIO_READ_WRITE_TOKEN,
         });
 
         const foto = blobs.find(b =>

@@ -8,7 +8,6 @@ export default async function StartComponent() {
     try {
         const { blobs } = await list({
             prefix: "profile/",
-            token: process.env.BLOB_PORTFOLIO_READ_WRITE_TOKEN,
         });
 
         const foto = blobs.find(b =>
