@@ -6,13 +6,9 @@ export default async function StartComponent() {
     let fotoPerfilUrl: string | null = null;
 
     try {
-        const { blobs } = await list({
-            prefix: "profile/",
-        });
+        const { blobs } = await list({ prefix: 'profile/' });
 
-        const foto = blobs.find(b =>
-            b.pathname.includes("foto-perfilSFO.png")
-        );
+        const foto = blobs.find(b => b.pathname.includes('foto-perfilSFO.png'));
 
         fotoPerfilUrl = foto?.url ?? null;
     } catch (err) {

@@ -8,13 +8,9 @@ export default async function ProjectComponent() {
     let imagesBA: string[] = [];
 
     try {
-        const { blobs } = await list({
-            prefix: "logo/",
-        });
+        const { blobs } = await list({ prefix: 'logo/' });
 
-        const foto = blobs.find(b =>
-            b.pathname.includes("LOGOBFN.png")
-        );
+        const foto = blobs.find(b => b.pathname.includes('LOGOBFN.png'));
 
         fotoPerfilUrl = foto?.url ?? null;
     } catch (err) {
@@ -22,11 +18,9 @@ export default async function ProjectComponent() {
     }
 
     try {
-        const { blobs } = await list({
-            prefix: "projects/",
-        });
+        const { blobs } = await list({ prefix: 'projects/' });
 
-        const frFile = blobs.find(b => b.pathname.includes("bg_fron"));
+        const frFile = blobs.find(b => b.pathname.includes('bg_fron'));
         imageFR = frFile?.url ?? null;
 
         imagesBA = blobs

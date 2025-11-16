@@ -6,13 +6,9 @@ export default async function FooterComponent() {
     let fotoPerfilUrl: string | null = null;
 
     try {
-        const { blobs } = await list({
-            prefix: "logo/",
-        });
+        const { blobs } = await list({ prefix: 'logo/' });
 
-        const foto = blobs.find(b =>
-            b.pathname.includes("LOGOBFN.png")
-        );
+        const foto = blobs.find(b => b.pathname.includes('LOGOBFN.png'));
 
         fotoPerfilUrl = foto?.url ?? null;
     } catch (err) {

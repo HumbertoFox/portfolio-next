@@ -6,17 +6,17 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'mtgdvju34gu1gpoj.public.blob.vercel-storage.com',
+                hostname: '0wym5snkkgilphca.public.blob.vercel-storage.com',
                 pathname: '/profile/**',
             },
             {
                 protocol: 'https',
-                hostname: 'mtgdvju34gu1gpoj.public.blob.vercel-storage.com',
+                hostname: '0wym5snkkgilphca.public.blob.vercel-storage.com',
                 pathname: '/logo/**',
             },
             {
                 protocol: 'https',
-                hostname: 'mtgdvju34gu1gpoj.public.blob.vercel-storage.com',
+                hostname: '0wym5snkkgilphca.public.blob.vercel-storage.com',
                 pathname: '/projects/**',
             },
         ],
