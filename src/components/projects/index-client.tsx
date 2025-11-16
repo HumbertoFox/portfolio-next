@@ -9,11 +9,19 @@ import { FaGithub } from 'react-icons/fa6';
 import { ProjectsProps } from '@/types';
 import { useTranslations } from 'next-intl';
 
-export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: string }) {
+export default function ProjectComponentClient({
+    logoPerfil,
+    imageFR,
+    imagesBA
+}: {
+    logoPerfil: string,
+    imageFR: string | null;
+    imagesBA: string[];
+}) {
     const t = useTranslations('ProjectComponent');
-    const projectsRef = useRef(null);
-    const titleProjectsRef = useRef(null);
-    const centerProjectsRef = useRef(null);
+    const projectsRef = useRef<HTMLElement>(null);
+    const titleProjectsRef = useRef<HTMLHeadingElement>(null);
+    const centerProjectsRef = useRef<HTMLDivElement>(null);
 
     const projects: ProjectsProps[] = [
         {
@@ -22,8 +30,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://nextjs-starter-kit-betofoxnet-info-projects.vercel.app/',
             description: t('DescriptionFirst'),
             title: t('TitleFirst'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_0.png'
         },
         {
             id: 'project-nextjs',
@@ -31,8 +37,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://nextjs-kits-starter.vercel.app/',
             description: t('DescriptionSecond'),
             title: t('TitleSecond'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_0.png'
         },
         {
             id: 'project-nextjs-kits',
@@ -40,8 +44,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://nextjs-start-kits.vercel.app/',
             description: t('DescriptionThird'),
             title: t('TitleThird'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_0.png'
         },
         {
             id: 'project-bfn-mlu-next-app',
@@ -49,8 +51,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://bfn-mlu-next-app.vercel.app/',
             description: t('DescriptionFourth'),
             title: t('TitleFourth'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_3.png'
         },
         {
             id: 'project-pokedex',
@@ -58,8 +58,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://exercicio-quest05.vercel.app/',
             description: t('DescriptionFifth'),
             title: t('TitleFifth'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_4.png'
         },
         {
             id: 'next-kit-starter',
@@ -67,8 +65,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://nextjs-kit-starter-betofoxnet-info-projects.vercel.app/',
             description: t('DescriptionSixth'),
             title: t('TitleSixth'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_5.png'
         },
         {
             id: 'filmes-app',
@@ -76,8 +72,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://films-app-betofoxnet-info-projects.vercel.app/',
             description: t('DescriptionSeventh'),
             title: t('TitleSeventh'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_6.png'
         },
         {
             id: 'Projeto App Next.js Start Kits',
@@ -85,8 +79,6 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
             live: 'https://nextjs-start-kit-pi.vercel.app/',
             description: t('DescriptionEighth'),
             title: t('TitleEighth'),
-            bgfr: '/bgs/bg_fron_0.png',
-            bgba: '/bgs/bg_back_0.png'
         },
     ];
 
@@ -126,13 +118,25 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
         });
     }, []);
     return (
-        <section className="w-full min-h-screen flex flex-col gap-10 px-4 cursor-default" id='projects' ref={projectsRef}>
-            <h5 className="text-center text-3xl font-bold capitalize opacity-0" ref={titleProjectsRef}>{t('Hfifth')}</h5>
+        <section
+            className="w-full min-h-screen flex flex-col gap-10 px-4 cursor-default"
+            id='projects'
+            ref={projectsRef}
+        >
+            <h5
+                className="text-center text-3xl font-bold capitalize opacity-0"
+                ref={titleProjectsRef}
+            >
+                {t('Hfifth')}
+            </h5>
 
-            <div className="flex justify-around items-center flex-wrap gap-5 opacity-0" ref={centerProjectsRef}>
+            <div
+                className="flex justify-around items-center flex-wrap gap-5 opacity-0"
+                ref={centerProjectsRef}
+            >
                 {projects?.map((project, index) => (
                     <div className="flex justify-around items-center flex-wrap gap-5 projects" key={index}>
-                        <div className="projectfron" style={{ backgroundImage: `url(${project.bgfr})` }}>
+                        <div className="projectfron" style={{ backgroundImage: `url(${imageFR})` }}>
                             <Link className="projectlink" href={project.github} target="_blank" rel="noopener">
                                 <Image
                                     src={logoPerfil}
@@ -148,7 +152,7 @@ export default function ProjectComponentClient({ logoPerfil }: { logoPerfil: str
                                 </div>
                             </Link>
                         </div>
-                        <div className="projectback" style={{ backgroundImage: `url(${project.bgba})` }}>
+                        <div className="projectback" style={{ backgroundImage: `url(${imagesBA[index]})` }}>
                             <Link className="projectlink" href={project.live} target="_blank" rel="noopener">
                                 <FaGithub />
                                 <span>{project.title}</span>

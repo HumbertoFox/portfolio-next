@@ -9,8 +9,8 @@ import { useTranslations } from 'next-intl';
 
 export default function AboutComponentClient({ fotoPerfil }: { fotoPerfil: string }) {
     const t = useTranslations('AboutComponent');
-    const aboutRef = useRef<HTMLDivElement>(null);
-    const titleAboutRef = useRef<HTMLDivElement>(null);
+    const aboutRef = useRef<HTMLElement>(null);
+    const titleAboutRef = useRef<HTMLHeadingElement>(null);
     const imageAboutRef = useRef<HTMLDivElement>(null);
     const textAboutRef = useRef<HTMLDivElement>(null);
     const buttonAboutRef = useRef<HTMLAnchorElement>(null);

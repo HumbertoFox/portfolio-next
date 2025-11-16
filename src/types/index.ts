@@ -12,8 +12,6 @@ export interface ProjectsProps {
     live: string;
     description: string;
     title: string;
-    bgfr: string;
-    bgba: string;
 };
 
 export interface SocialComponentProps {

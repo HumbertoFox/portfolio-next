@@ -13,14 +13,14 @@ export default function SkillsComponent() {
     const t = useTranslations('SkillsComponent');
     const [visibleSkills, setVisibleSkills] = useState<number>(6);
     const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
-    const [detailsVisible, setDetailsVisible] = useState(false);
+    const [detailsVisible, setDetailsVisible] = useState<boolean>(false);
     const skillsRef = useRef<HTMLElement>(null);
     const titleSkillsRef = useRef<HTMLHeadingElement>(null);
     const leftSkillsRef = useRef<HTMLDivElement>(null);
     const centerSkillsRef = useRef<HTMLButtonElement>(null);
     const skillsListRef = useRef<(HTMLButtonElement | null)[]>([]);
 
-    const skillsData = [
+    const skillsData: Skill[] = [
         { icon: <Html5Original size='100' />, name: 'HTML5', description: t('DescriptionFirst') },
         { icon: <Css3Original size='100' />, name: 'CSS3', description: t('DescriptionSecond') },
         { icon: <JavascriptOriginal size='100' />, name: 'JavaScript', description: t('DescriptionThird') },
