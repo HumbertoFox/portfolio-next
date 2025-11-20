@@ -1,6 +1,6 @@
 'use client';
 
-import { AmazonwebservicesOriginalWordmark, Css3Original, DockerOriginal, ElectronOriginal, ExpressOriginal, GithubOriginal, GitOriginal, Html5Original, JavascriptOriginal, LaravelOriginal, MariadbOriginal, NextjsOriginal, PhpOriginal, PostgresqlOriginal, PrismaOriginal, ReactOriginal, TailwindcssOriginal, TypescriptOriginal, VitejsOriginal } from 'devicons-react';
+import { AmazonwebservicesOriginalWordmark, Css3Original, DockerOriginal, ElectronOriginal, ExpressOriginal, GithubOriginal, GitOriginal, Html5Original, JavascriptOriginal, LaravelOriginal, MariadbOriginal, NextjsOriginal, PhpOriginal, PostgresqlOriginal, PrismaOriginal, ReactOriginal, StyledcomponentsOriginal, TailwindcssOriginal, TypescriptOriginal, VitejsOriginal } from 'devicons-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef, useState } from 'react';
@@ -27,6 +27,7 @@ export default function SkillsComponent() {
         { icon: <TypescriptOriginal size='100' />, name: 'TypeScript', description: t('DescriptionFourth') },
         { icon: <PhpOriginal size='100' />, name: 'PHP', description: t('DescriptionFifth') },
         { icon: <TailwindcssOriginal size='100' />, name: 'TailwindCss', description: t('DescriptionSixth') },
+        { icon: <StyledcomponentsOriginal size='100' />, name: 'StyledComponents', description: t('DescriptionTwentyth') },
         { icon: <GithubOriginal size='100' />, name: 'GitHub', description: t('DescriptionSeventh') },
         { icon: <GitOriginal size='100' />, name: 'Git', description: t('DescriptionEighth') },
         { icon: <ReactOriginal size='100' />, name: 'React', description: t('DescriptionNinth') },
