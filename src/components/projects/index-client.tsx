@@ -25,9 +25,9 @@ export default function ProjectComponentClient({
 
     const projects: ProjectsProps[] = [
         {
-            id: 'next-starter-kit',
-            github: 'https://github.com/HumbertoFox/nextjs-starter-kit',
-            live: 'https://nextjs-starter-kit-betofoxnet-info-projects.vercel.app/',
+            id: 'neninstalacoes-next',
+            github: 'https://github.com/HumbertoFox/neninstalacoes',
+            live: 'https://neninstalacoes.vercel.app/',
             description: t('DescriptionFirst'),
             title: t('TitleFirst'),
         },
