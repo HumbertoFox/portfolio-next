@@ -32,9 +32,9 @@ export default function ProjectComponentClient({
             title: t('TitleFirst'),
         },
         {
-            id: 'project-nextjs',
-            github: 'https://github.com/HumbertoFox/nextjs-kits-starter',
-            live: 'https://nextjs-kits-starter.vercel.app/',
+            id: 'nextjs-auth-sidebar-shadcn',
+            github: 'https://github.com/HumbertoFox/nextjs-auth-sidebar-shadcn',
+            live: 'https://nextjs-auth-sidebar-shadcn.vercel.app/',
             description: t('DescriptionSecond'),
             title: t('TitleSecond'),
         },
